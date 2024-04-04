@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 90%;
 }
 
 /* ---  Groups & Items --- */
@@ -67,6 +67,8 @@ header {
 
 header nav ul li {
   list-style-type: none;
+  display: inline-block;
+  padding: 10px 0
 }
 
 header nav ul li a {
@@ -87,15 +89,24 @@ form {
 }
 
 form label {
+  display: inline-block;
+  width: 50%;
   font-weight: bold;
+  text-align: left;
 }
 
-form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  display: inline-block;
+  text-align: right;
 }
-
+form select {
+  height: auto;
+  max-height: calc(7 * 1.5em);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
 form button {
   background-color: #83092e;
   border: none;
@@ -118,3 +129,11 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}

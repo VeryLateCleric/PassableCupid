@@ -32,101 +32,111 @@
 
     <main>
       <!-- Join -->
-      <section id="join">
-        
-        
-        <img src="images/love.png" alt="ThinkfulCupid - love" />
-        <h2>Find your perfect match</h2>
-        <form action="submit_join_form.php" method="post">
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br>
-
-          <label for="username">Username:</label><br>
-          <input type="text" id="username" name="username" required><br><br>
-
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password" required><br><br>
-
-          <label for="genderSelector">I am a...:</label><br>
-          <select id="gender" name="gender" required>
-            <option value="">Select Gender</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="abinary">Abinary</option>
-            <option value="agender">Agender</option>
-            <option value="ambigender">Ambigender</option>
-            <option value="androgyne">Androgyne</option>
-            <option value="androgynous">Androgynous</option>
-            <option value="aporagender">Aporagender</option>
-            <option value="autigender">Autigender</option>
-            <option value="bakla">Bakla</option>
-            <option value="bigender">Bigender</option>
-            <option value="binary">Binary</option>
-            <option value="bissu">Bissu</option>
-            <option value="butch">Butch</option>
-            <option value="calabai">Calabai</option>
-            <option value="calalai">Calalai</option>
-            <option value="demiflux">Demiflux</option>
-            <option value="demigender">Demigender</option>
-            <option value="dualgender">Dualgender</option>
-            <option value="eunuch">Eunuch</option>
-            <option value="fa'afafine">Faʻafafine</option>
-            <option value="ftm">Female To Male</option>
-            <option value="femme">Femme</option>
-            <option value="genderBent">Gender Bent</option>
-            <option value="genderDiverse">Gender Diverse</option>
-            <option value="genderFluid">Gender Fluid</option>
-            <option value="genderFlux">Gender Flux</option>
-            <option value="genderFuck">Gender F***</option>
-            <option value="genderless">Genderless</option>
-            <option value="genderNC">Gender Nonconforming</option>
-            <option value="genderNonMaleMasc">Genderfluid - nonmale/masc</option>
-            <option value="genderQueer">Gender Queer</option>
-            <option value="genderQuestioning">Gender Questioning</option>
-            <option value="genderVariant">Gender Variant</option>
-            <option value="hijra">Hijra</option>
-            <option value="intergender">Intergender</option>
-            <option value="ipsogender">Ipsogender</option>
-            <option value="kathoey">Kathoey</option>
-            <option value="mahu">Māhū</option>
-            <option value="mtf">Male To Female</option>
-            <option value="multigender">Multi Gender</option>
-            <option value="muxe">Muxe</option>
-            <option value="neurogender">Neurogender</option>
-            <option value="neutrois">Neutrois</option>
-            <option value="nonbinary">Non-Binary</option>
-            <option value="omnigender">Omni Gender</option>
-            <option value="other">Other...</option>
-            <option value="pangender">Pangender</option>
-            <option value="polygender">Polygender</option>
-            <option value="queer">Queer</option>
-            <option value="sekhet">Sekhet</option>
-            <option value="transGender">Transgender</option>
-            <option value="transFeminine">Transfeminine</option>
-            <option value="transMan">Trans Man</option>
-            <option value="transMasculine">Transmasculine</option>
-            <option value="transWoman">Trans Woman</option>
-            <option value="tumtum">Tumtum</option>
-            <option value="vakasalewalewa">Vakasalewalewa</option>
-            <option value="waria">Waria</option>
-            <option value="winkte">Winkte</option>
-            <option value="xGender">X Gender</option>
-          </select>
-        </form>
-        <!-- Add join form here -->
+      <section id="join" class="join-section">
+        <div class="group">
+          <div class="item-double">
+            <img src="images/love.png" alt="ThinkfulCupid - love" />
+          </div>
+      <div class="text-content">
+        <div class="section-header">
+          <h2>Find your perfect match</h2>
+        </div>
+          <div class="item">
+            <form action="submit_join_form.php" method="post">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+    
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+    
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+    
+              <label for="genderSelector">I am a...:</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="abinary">Abinary</option>
+                <option value="agender">Agender</option>
+                <option value="ambigender">Ambigender</option>
+                <option value="androgyne">Androgyne</option>
+                <option value="androgynous">Androgynous</option>
+                <option value="aporagender">Aporagender</option>
+                <option value="autigender">Autigender</option>
+                <option value="bakla">Bakla</option>
+                <option value="bigender">Bigender</option>
+                <option value="binary">Binary</option>
+                <option value="bissu">Bissu</option>
+                <option value="butch">Butch</option>
+                <option value="calabai">Calabai</option>
+                <option value="calalai">Calalai</option>
+                <option value="demiflux">Demiflux</option>
+                <option value="demigender">Demigender</option>
+                <option value="dualgender">Dualgender</option>
+                <option value="eunuch">Eunuch</option>
+                <option value="fa'afafine">Faʻafafine</option>
+                <option value="ftm">Female To Male</option>
+                <option value="femme">Femme</option>
+                <option value="genderBent">Gender Bent</option>
+                <option value="genderDiverse">Gender Diverse</option>
+                <option value="genderFluid">Gender Fluid</option>
+                <option value="genderFlux">Gender Flux</option>
+                <option value="genderFuck">Gender F***</option>
+                <option value="genderless">Genderless</option>
+                <option value="genderNC">Gender Nonconforming</option>
+                <option value="genderNonMaleMasc">Genderfluid - nonmale/masc</option>
+                <option value="genderQueer">Gender Queer</option>
+                <option value="genderQuestioning">Gender Questioning</option>
+                <option value="genderVariant">Gender Variant</option>
+                <option value="hijra">Hijra</option>
+                <option value="intergender">Intergender</option>
+                <option value="ipsogender">Ipsogender</option>
+                <option value="kathoey">Kathoey</option>
+                <option value="mahu">Māhū</option>
+                <option value="mtf">Male To Female</option>
+                <option value="multigender">Multi Gender</option>
+                <option value="muxe">Muxe</option>
+                <option value="neurogender">Neurogender</option>
+                <option value="neutrois">Neutrois</option>
+                <option value="nonbinary">Non-Binary</option>
+                <option value="omnigender">Omni Gender</option>
+                <option value="other">Other...</option>
+                <option value="pangender">Pangender</option>
+                <option value="polygender">Polygender</option>
+                <option value="queer">Queer</option>
+                <option value="sekhet">Sekhet</option>
+                <option value="transGender">Transgender</option>
+                <option value="transFeminine">Transfeminine</option>
+                <option value="transMan">Trans Man</option>
+                <option value="transMasculine">Transmasculine</option>
+                <option value="transWoman">Trans Woman</option>
+                <option value="tumtum">Tumtum</option>
+                <option value="vakasalewalewa">Vakasalewalewa</option>
+                <option value="waria">Waria</option>
+                <option value="winkte">Winkte</option>
+                <option value="xGender">X Gender</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+        </section>
       </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
-        <h2>About</h2>
-        <img
-          src="images/sunset-with-heart.png"
-          alt="ThinkfulCupid - Sunset with heart"
-        />
-        <img
-          src="images/two-people-sunset-candles.png"
-          alt="ThinkfulCupid - Two people with sunset and candles"
-        />
+        <div class="section-header">
+          <h2>About</h2>
+        </div>
+        
+        <div class="group">
+          <div class="item-double">
+
+          </div>
+        </div>
+        <img src="images/sunset-with-heart.png" alt="ThinkfulCupid - Sunset with heart"/>
+        <img src="images/two-people-sunset-candles.png" alt="ThinkfulCupid - Two people with sunset and candles"/>
         <p>
           Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
           fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
@@ -141,7 +151,10 @@
 
       <!-- Download -->
       <section id="download">
-        <h2>Download the App</h2>
+        <div class="section-header">
+          <h2>Download the App</h2>
+        </div>
+        
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
@@ -165,7 +178,10 @@
 
       <!-- Blog -->
       <section id="blog" class="alternate-background">
-        <h2>Blog</h2>
+        <div class="section-header">
+          <h2>Blog</h2>
+        </div>
+        
 
         <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>

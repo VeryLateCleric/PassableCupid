@@ -40,6 +40,8 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item {
@@ -48,7 +50,10 @@ main img {
 }
 
 .item-double {
-  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* -------  Navigation ------- */
@@ -95,18 +100,18 @@ form label {
   text-align: left;
 }
 
-form input {
-  margin-bottom: 20px;
-  width: 140px;
-  display: inline-block;
-  text-align: right;
+form input, form select {
+  width: 46%;
+  flex: 1;
+  text-align: left;
 }
-form select {
+.form-group select {
   height: auto;
-  max-height: calc(7 * 1.5rem);
+  max-height: 176px;
   overflow-y: auto;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
+
 form button {
   background-color: #83092e;
   border: none;
@@ -131,16 +136,43 @@ footer p {
 /* -------  Media Query ------- */
 @media only screen and (min-width: 768px) {
   section {
-    padding: 10 10%;
+    padding: 0px 2%;
     display: flex;
-    align-items: column;
+    flex-direction: column;
+    padding-top: 0px 2%;
+    padding-bottom: 0px 2%;
   }
   
   .section-header {
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
-  
+
+  .logo {
+    order: 1
+  }
+
+  nav {
+    order: 2;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: row
+  }
+
+  nav li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
   .group {
     display:flex;
     flex-direction: row;
@@ -174,4 +206,55 @@ footer p {
     text-align: left;
     margin-bottom: 20px;
   }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .form-group label {
+    margin-right: 10px;
+    width: 150px;
+    line-height: 20px;
+    justify-content: center;
+  }
+
+  .form-group input,
+  .form-group select {
+    flex: 1;
+    display: flex;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  #blog {
+    padding: 20px;
+  }
+  
+  #blog .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-bottom: 20px; */
+  }
+  
+  #blog .item-double {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  #blog img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
 }

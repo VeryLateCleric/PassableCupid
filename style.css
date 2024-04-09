@@ -56,6 +56,10 @@ main img {
   flex-direction: column;
 }
 
+.padding-b {
+  padding-bottom: 1.5rem;
+}
+
 /* -------  Navigation ------- */
 
 header {

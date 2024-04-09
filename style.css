@@ -57,7 +57,12 @@ main img {
 }
 
 .padding-b {
-  padding-bottom: 1.5rem;
+  padding: 0 0 1.5rem 0;
+}
+
+.textbox {
+  padding: 0 1rem 0 1rem;
+  justify-content: center;
 }
 
 /* -------  Navigation ------- */
@@ -77,7 +82,7 @@ header {
 header nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px 0
+  padding: 10px 0;
 }
 
 header nav ul li a {
@@ -161,7 +166,9 @@ footer p {
   }
 
   header {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   nav {

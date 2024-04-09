@@ -166,17 +166,21 @@ footer p {
   }
 
   .logo {
-    order: 1
+    font-size: 2.5rem;
+    padding: .5rem
   }
 
   header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
   nav {
-    order: 1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
   nav ul {

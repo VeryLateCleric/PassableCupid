@@ -8,7 +8,7 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 10px 15px 10px;
+  margin: .59rem;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 90%;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -50,7 +50,8 @@ main img {
 }
 
 .item-double {
-  display: flex;
+  /* display: flex; */
+  flex: 2;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -126,7 +127,7 @@ form input, form select {
   height: auto;
   max-height: 176px;
   overflow-y: auto;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 form button {
@@ -174,95 +175,33 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    padding: 1rem;
   }
 
   nav {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  nav ul {
-    flex-direction: row;
-    margin: 0;
   }
 
   nav li {
     margin: 0;
   }
 
+
   .group {
-    display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
   
-  .item {
-    flex: 1;
-    margin: 10px
-  }
-  
-  .item-double {
-    flex: 2;
-  }
-  
-  .item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .join-section .text-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .join-section .text-content h2 {
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .form-group label {
-    margin-right: 10px;
-    width: 150px;
-    line-height: 20px;
-    justify-content: center;
-  }
-
-  .form-group input,
-  .form-group select {
-    flex: 1;
-    display: flex;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  #blog {
-    padding: 20px;
+  .join-section {
+    padding-top: 1rem;
   }
   
   #blog .group {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
   }
   
   #blog .item-double {
